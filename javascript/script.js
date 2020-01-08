@@ -13,10 +13,24 @@ familyNameGroup.push(userName);
 console.log(familyNameGroup);
 familyNameGroup.sort();
 
+var posizioneNome;
+
 for (var i = 0; i < familyNameGroup.length; i++) {
   var formazioneGlorie = document.getElementById('formazione').innerHTML;
   document.getElementById('formazione').innerHTML = formazioneGlorie + '<li>' + familyNameGroup[i] + '</li>';
+  if (familyNameGroup[i] == userName) {
+    posizioneNome = i;
+    console.log(posizioneNome + 1);
+  }
 }
-
-var userNamePosition = familyNameGroup.indexOf(userName) + 1;
-console.log(userNamePosition);
+document.getElementById('formazione').innerHTML = posizioneNome + 1;
+// var userNamePosition = familyNameGroup.indexOf(userName) + 1;
+// console.log(userNamePosition);
+// var posizioneNome;
+//
+// for (var i = 0; i < familyNameGroup.length; i++) {
+//   if (familyNameGroup[i] == userName) {
+//     posizioneNome = i;
+//     console.log(posizioneNome + 1);
+//   }
+// }

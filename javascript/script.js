@@ -23,7 +23,10 @@ for (var i = 0; i < familyNameGroup.length; i++) {
     console.log(posizioneNome + 1);
   }
 }
-document.getElementById('formazione').innerHTML = posizioneNome + 1;
+document.getElementById('formazione').innerHTML += 'Il tuo Nome è nella posizione numero:'+ ' ' + (posizioneNome + 1);
+
+
+//calcolo della posizione con indexOf
 // var userNamePosition = familyNameGroup.indexOf(userName) + 1;
 // console.log(userNamePosition);
 // var posizioneNome;

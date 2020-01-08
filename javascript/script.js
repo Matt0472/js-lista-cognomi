@@ -11,10 +11,12 @@ console.log(familyNameGroup);
 
 familyNameGroup.push(userName);
 console.log(familyNameGroup);
-
+familyNameGroup.sort();
 
 for (var i = 0; i < familyNameGroup.length; i++) {
   var formazioneGlorie = document.getElementById('formazione').innerHTML;
   document.getElementById('formazione').innerHTML = formazioneGlorie + '<li>' + familyNameGroup[i] + '</li>';
-  familyNameGroup.sort();
 }
+
+var userNamePosition = familyNameGroup.indexOf(userName) + 1;
+console.log(userNamePosition);

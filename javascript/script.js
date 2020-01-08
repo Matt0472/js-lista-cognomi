@@ -6,9 +6,15 @@
 var userName = prompt('Qual è il tuo cognome?');
 console.log(userName);
 
-var familyNameGroup = ['Nesta', 'Rui costa', 'Shevchenko', 'Baresi', 'Maldini', 'Ancelotti', 'Inzaghi', 'Gattuso'];
+var familyNameGroup = ['Nesta', 'Rui costa', 'Shevchenko', 'Baresi', 'Maldini', 'Ancelotti', 'Inzaghi', 'Gattuso', 'Van Basten', 'Tassotti', 'Savicevic', 'Baggio', 'Stam'];
 console.log(familyNameGroup);
-
 
 familyNameGroup.push(userName);
 console.log(familyNameGroup);
+
+
+for (var i = 0; i < familyNameGroup.length; i++) {
+  var formazioneGlorie = document.getElementById('formazione').innerHTML;
+  document.getElementById('formazione').innerHTML = formazioneGlorie + '<li>' + familyNameGroup[i] + '</li>';
+  familyNameGroup.sort();
+}
